@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fun, free  online food flashcards for learning English vocabulary">
+    <meta name="keywords" content="Food flashcards online">
+    <title>Food Flashcards</title>
+    <link rel="icon" type="image/png"
+    href="favicon.png";
+  />
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="csi.min.js"></script>
+</head>
+<body>
+
+  <div class="loader-div" id="loaderDiv" onload = "checkForTop();">
+    <div class="loader-container">
+      <img class="apple ghost" src="img/loader/apple.png" alt=""> 
+      <img class="pears ghost" src="img/loader/pears.png" alt=""> 
+      <img class="plums ghost" src="img/loader/plums.png" alt=""> 
+    </div>
+  </div>
+
+    <div class="nav-bar" id="navbar">
+        <a href="index.html" class="nav-bar__logo">
+          <svg class="icon-header nav-bar__logo-img">
+            <use xlink:href="sprite2.svg#Buho" onclick="scrollUp()">
+            </use>
+          </svg>    </a>
+        <h3 class="nav-bar__title">Esl-Ology.Com</h3>
+        <div class="nav-bar__title-page">
+          <span class="nav-bar__title-page-main" id="pageTitle">FOOD FLASHCARDS</span>
+      </div>
+      <div class="nav-bar__links">
+        <a href="index.html" class="nav-bar__link link3">Home</a>
+        <svg viewBox="0 0 100 80" width="40" height="20" onclick="toggler();" id="menu" class="menu">
+          <rect width="100" height="12"></rect>
+          <rect y="30" width="100" height="12"></rect>
+          <rect y="60" width="100" height="12"></rect>
+        </svg>     
+      </div>
+    </div>
+
+    <div id="wrapper" class="wrapper">
+
+          
+      <div class="sidebar-container" id="sidebar">
+        <div data-include="sidebar.html">
+        </div>
+      </div>
+
+        <div class="introduction">
+          <div class="introduction__img" onclick="burping();"id="mainpic">
+            <img src="img/pizza/pizza.png" alt="decorative">
+          </div>
+          <div class="introduction__text">
+            <h1>FOOD MOODS</h1>
+            <p>
+            Food is always a subject that can get students talking — likes and dislikes, rules and manners, habits, what you had last Sunday and what you are going to have later. One way of having fun is to go round the class with each student adding to the sentence "I went to a party and I ate..." Students drop out when they cannot remember the list.
+            </p>
+          </div>
+        </div>
+
+    <div class="main">
+      <div id="overlay" class="overlay">
+        <img id="image-art" class="image-art" src="img/apple.jpg" alt="">
+        <div class="after">
+        </div>
+          <p id="image-text" class="image-text">apple</p>
+      </div>
+        <div class="buttons">
+          <div class="buttons__icon" onclick="goBackwards()">
+            <img class="buttons__icon-img arrow1" src="img/right-arrow.png" alt="">
+          </div>
+            <p class="count" id="count">2/20</p>
+          <div class="buttons__icon" onclick="goForwards()">
+            <img class="buttons__icon-img arrow2" src="img/right-arrow.png" alt="">
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="links">
+        <p class="links__text">
+          Links to some more TEFL games.
+        </p>
+        <div class="links__images">
+          <div class="links__images-1 figure">
+            <a href="questions-maze.html">
+            <img src="img/QuestionsMaze.jpg" alt=""></a>
+              <figcaption>Try a Grammar Maze!</figcaption>
+          </div>
+          <div class="links__images-1 figure">
+            <a href="bingo-halloween.html">
+            <img src="img/HalloweenBingoCard.jpg" alt=""></a>
+              <figcaption>Halloween Bingo with Printable Cards</figcaption>
+          </div>
+      </div>
+
+
+    </div>
+</div>
+    <footer class="footer">
+        <div class="footer__copyright" id="footer">
+          <p>© 2020 Copyright Esl-ology.com & copyright owners.</p>
+          <p>Image credits <a href="food-flashcard-credits.html">here</a>.Thanks,guys!</p>
+        </div>
+    </footer>
+
+  <div class="hidden"><img src="sprite2.svg" style="display: none">
+      <script>
+    <!--//--><![CDATA[//><!--
+    var images = new Array();
+      function preload(){
+        for(i=0; i<preload.arguments.length; i++){
+          images[i] = new Image();
+          images[i].src = preload.arguments[i];
+        }
+      }
+    preload(
+      "img/apple.jpg",
+    "img/banana.jpg",
+    "img/beans.jpg",
+    "img/bread.jpg",
+    "img/broccoli.jpg",
+    "img/burger.jpg",
+    "img/cabbage.jpg",
+    "img/cake.jpg",
+    "img/carrot.jpg",
+    "img/chicken.jpg",
+    "img/chips.jpg",
+    "img/cucumber.jpg",
+    "img/donut.jpg",
+    "img/egg.jpg",
+    "img/fish.jpg",
+    "img/grape.jpg",
+    "img/honey.jpg",
+    "img/ice-cream.jpg",
+    "img/jam.jpg",
+    "img/kiwi.jpg",
+    "img/lettuce.jpg",
+    "img/lobster.jpg",
+    "img/mushroom.jpg",
+    "img/nut.jpg",
+    "img/onion.jpg",
+    "img/pasta.jpg",
+    "img/pepper.jpg",
+    "img/pizza.jpg",
+    "img/potato.jpg",
+    "img/prawn.jpg",
+    "img/radish.jpg",
+    "img/sausage.jpg",
+    "img/tomato.jpg"
+    )
+      //--><!]]>
+    </script>
+  </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
