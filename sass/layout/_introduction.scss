@@ -115,10 +115,10 @@
 }
 
 .rocketMove{
-    animation: landing 3s forwards;
+    animation: landing 3s ease-in forwards;
 }
 .manMove{
-    animation: moonwalk 5s forwards;
+    animation: moonwalk 5s ease-in-out forwards;
     animation-delay: 3s;
 }
 

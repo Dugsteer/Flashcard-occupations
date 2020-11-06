@@ -68,9 +68,9 @@ let imageArt = document.getElementById('image-art');
 let imageText = document.getElementById('image-text');
 
 var imageList = [
+  "astronaut.jpg",
   "actor.jpg",
   "artist.jpg",
-  "astronaut.jpg",
   "builder.jpg",
   "chef.jpg",
   "dancer.jpg",
