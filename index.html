@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fun, free  online food flashcards for learning English vocabulary">
-    <meta name="keywords" content="Food flashcards online">
-    <title>Food Flashcards</title>
+    <meta name="description" content="Fun, free  online occupations flashcards for learning English vocabulary about jobs">
+    <meta name="keywords" content="Occupations flashcards online">
+    <title>Occupations Flashcards</title>
     <link rel="icon" type="image/png"
     href="favicon.png";
   />
@@ -14,13 +14,13 @@
 </head>
 <body>
 
-  <div class="loader-div" id="loaderDiv" onload = "checkForTop();">
+   <div class="loader-div" id="loaderDiv" onload = "checkForTop();">
     <div class="loader-container">
       <img class="apple ghost" src="img/loader/apple.png" alt=""> 
       <img class="pears ghost" src="img/loader/pears.png" alt=""> 
       <img class="plums ghost" src="img/loader/plums.png" alt=""> 
     </div>
-  </div>
+  </div> 
 
     <div class="nav-bar" id="navbar">
         <a href="index.html" class="nav-bar__logo">
@@ -30,7 +30,7 @@
           </svg>    </a>
         <h3 class="nav-bar__title">Esl-Ology.Com</h3>
         <div class="nav-bar__title-page">
-          <span class="nav-bar__title-page-main" id="pageTitle">FOOD FLASHCARDS</span>
+          <span class="nav-bar__title-page-main" id="pageTitle">OCCUPATIONS FLASHCARDS</span>
       </div>
       <div class="nav-bar__links">
         <a href="index.html" class="nav-bar__link link3">Home</a>
@@ -51,29 +51,38 @@
       </div>
 
         <div class="introduction">
-          <div class="introduction__img" onclick="burping();"id="mainpic">
-            <img src="img/pizza/pizza.png" alt="decorative">
+          <div class="introduction__img" id="mainpic">
+            <div class="rocketdiv" id="rocket">
+              <img src="img/jobs/rocket.svg" class="rocket"  alt="small rocket">
+            </div>
+            <div class="mandiv" id="spaceman">
+              <img src="img/jobs/astronaut.svg" class="spaceman"  alt="mini spaceman">
+            </div>
+            <img src="img/jobs/moon.jpg" alt="decorative moon">
+         
+          
+
           </div>
           <div class="introduction__text">
-            <h1>FOOD MOODS</h1>
+            <h1>ANOTHER LITTLE JOB DONE!</h1>
             <p>
-            Food is always a subject that can get students talking — likes and dislikes, rules and manners, habits, what you had last Sunday and what you are going to have later. One way of having fun is to go round the class with each student adding to the sentence "I went to a party and I ate..." Students drop out when they cannot remember the list.
+            Occupations is a great subject for charades. Students secretly choose a job and act it out until someone manages to guess what it is. They can also write descriptions of "me now" and "me in the future" and say what they would like to be when they grow up, or which jobs they might like to try. 
             </p>
           </div>
         </div>
 
     <div class="main">
       <div id="overlay" class="overlay">
-        <img id="image-art" class="image-art" src="img/apple.jpg" alt="">
+        <img id="image-art" class="image-art" src="img/astronaut.jpg" alt="">
         <div class="after">
         </div>
-          <p id="image-text" class="image-text">apple</p>
+          <p id="image-text" class="image-text">astronaut</p>
       </div>
         <div class="buttons">
           <div class="buttons__icon" onclick="goBackwards()">
             <img class="buttons__icon-img arrow1" src="img/right-arrow.png" alt="">
           </div>
-            <p class="count" id="count">2/20</p>
+            <p class="count" id="count">3/27</p>
           <div class="buttons__icon" onclick="goForwards()">
             <img class="buttons__icon-img arrow2" src="img/right-arrow.png" alt="">
           </div>
@@ -94,7 +103,7 @@
           <div class="links__images-1 figure">
             <a href="bingo-halloween.html">
             <img src="img/HalloweenBingoCard.jpg" alt=""></a>
-              <figcaption>Halloween Bingo with Printable Cards</figcaption>
+              <figcaption>Occupations Bingo with Printable Cards</figcaption>
           </div>
       </div>
 
@@ -119,39 +128,33 @@
         }
       }
     preload(
-      "img/apple.jpg",
-    "img/banana.jpg",
-    "img/beans.jpg",
-    "img/bread.jpg",
-    "img/broccoli.jpg",
-    "img/burger.jpg",
-    "img/cabbage.jpg",
-    "img/cake.jpg",
-    "img/carrot.jpg",
-    "img/chicken.jpg",
-    "img/chips.jpg",
-    "img/cucumber.jpg",
-    "img/donut.jpg",
-    "img/egg.jpg",
-    "img/fish.jpg",
-    "img/grape.jpg",
-    "img/honey.jpg",
-    "img/ice-cream.jpg",
-    "img/jam.jpg",
-    "img/kiwi.jpg",
-    "img/lettuce.jpg",
-    "img/lobster.jpg",
-    "img/mushroom.jpg",
-    "img/nut.jpg",
-    "img/onion.jpg",
-    "img/pasta.jpg",
-    "img/pepper.jpg",
-    "img/pizza.jpg",
-    "img/potato.jpg",
-    "img/prawn.jpg",
-    "img/radish.jpg",
-    "img/sausage.jpg",
-    "img/tomato.jpg"
+      "img/actor.jpg",
+"img/artist.jpg",
+"img/astronaut.jpg",
+"img/builder.jpg",
+"img/chef.jpg",
+"img/dancer.jpg",
+"img/dentist.jpg",
+"img/diver.jpg",
+"img/doctor.jpg",
+"img/farmer.jpg",
+"img/firefighter.jpg",
+"img/footballer.jpg",
+"img/hairdresser.jpg",
+"img/mechanic.jpg",
+"img/model.jpg",
+"img/musician.jpg",
+"img/nurse.jpg",
+"img/photographer.jpg",
+"img/pilot.jpg",
+"img/police-officer.jpg",
+"img/reporter.jpg",
+"img/singer.jpg",
+"img/soldier.jpg",
+"img/taxi-driver.jpg",
+"img/teacher.jpg",
+"img/vet.jpg",
+"img/waiter.jpg"
     )
       //--><!]]>
     </script>

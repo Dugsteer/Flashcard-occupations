@@ -7,35 +7,25 @@ const blue = window.matchMedia("(max-width: 800px)");
 
 
 //switch introduction pic
-function switchpic(){
-    switch (mainpic.innerHTML) {
-        case '<img src="img/pizza/pizza.png" alt="decorative">' :
-            mainpic.innerHTML = '<img src="img/pizza/pizza1.png" alt="decorative">';
-            break;
-        case '<img src="img/pizza/pizza1.png" alt="decorative">' :
-            mainpic.innerHTML = '<img src="img/pizza/pizza2.png" alt="decorative">';
-            break;
-        case '<img src="img/pizza/pizza2.png" alt="decorative">' :
-            mainpic.innerHTML = '<img src="img/pizza/pizza3.png" alt="decorative">';
-         break;
-        case '<img src="img/pizza/pizza3.png" alt="decorative">' :
-            mainpic.innerHTML = '<img src="img/pizza/pizza4.png" alt="decorative">';
-         break;
-        case '<img src="img/pizza/pizza4.png" alt="decorative">' :
-            mainpic.innerHTML = '<img src="img/pizza/pizza5.png" alt="decorative">';
-         break;
-    default: 
-    mainpic.innerHTML = '<img src="img/pizza/pizza.png" alt="decorative">' 
-}
-}
-    setInterval(switchpic, 2000);
 
-//Play Burp 
+const rocket = document.getElementById('rocket');
+const spaceman = document.getElementById('spaceman');
 
-function burping(){
-    const burp = new Audio("sounds/burp.wav");
-    burp.play();
+function landShip(){
+  rocket.classList.add('rocketMove');
+  spaceman.classList.add('manMove');
+  spaceship();
+  mainpic.removeEventListener('click', landShip);
 }
+
+
+
+function spaceship(){
+    const ship = new Audio("sounds/space-ship.wav");
+    ship.play();
+}
+
+mainpic.addEventListener('click', landShip);
 
 // Show and hide about info
 function show(){info.classList.toggle('xxc');};
@@ -78,39 +68,33 @@ let imageArt = document.getElementById('image-art');
 let imageText = document.getElementById('image-text');
 
 var imageList = [
-    "apple.jpg",
-    "banana.jpg",
-    "beans.jpg",
-    "bread.jpg",
-    "broccoli.jpg",
-    "burger.jpg",
-    "cabbage.jpg",
-    "cake.jpg",
-    "carrot.jpg",
-    "chicken.jpg",
-    "chips.jpg",
-    "cucumber.jpg",
-    "donut.jpg",
-    "egg.jpg",
-    "fish.jpg",
-    "grape.jpg",
-    "honey.jpg",
-    "ice-cream.jpg",
-    "jam.jpg",
-    "kiwi.jpg",
-    "lettuce.jpg",
-    "lobster.jpg",
-    "mushroom.jpg",
-    "nut.jpg",
-    "onion.jpg",
-    "pasta.jpg",
-    "pepper.jpg",
-    "pizza.jpg",
-    "potato.jpg",
-    "prawn.jpg",
-    "radish.jpg",
-    "sausage.jpg",
-    "tomato.jpg"
+  "actor.jpg",
+  "artist.jpg",
+  "astronaut.jpg",
+  "builder.jpg",
+  "chef.jpg",
+  "dancer.jpg",
+  "dentist.jpg",
+  "diver.jpg",
+  "doctor.jpg",
+  "farmer.jpg",
+  "firefighter.jpg",
+  "footballer.jpg",
+  "hairdresser.jpg",
+  "mechanic.jpg",
+  "model.jpg",
+  "musician.jpg",
+  "nurse.jpg",
+  "photographer.jpg",
+  "pilot.jpg",
+  "police-officer.jpg",
+  "reporter.jpg",
+  "singer.jpg",
+  "soldier.jpg",
+  "taxi-driver.jpg",
+  "teacher.jpg",
+  "vet.jpg",
+  "waiter.jpg"
 ];
 
 
